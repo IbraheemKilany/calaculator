@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(172, 93, 93);
+}
+
+.calc{
+display: grid;
+grid-template-columns: repeat(4,100px);
+grid-auto-rows: 100px;
+
+}
+.calc div{
+ height: 160px;
+ width: 399px;
+ color: black;
+grid-column: 1 / 5;
+font-weight: bold;
+font-size: large;
+border: none;
+background-color: white;
+}
+.calc button:nth-child(18){
+grid-column: 1 / 5;
+background-color: darkred;
+height: 50px;
+}
+button{
+font-size:larger;
+color: beige;
+background-color: black;
+    font-weight: bold;
+    border: none;
+}
+button:active{
+    background-color: white;
+}
